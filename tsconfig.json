@@ -20,7 +20,7 @@
     "strict": true,
     "jsx": "preserve",
     "allowSyntheticDefaultImports": true,
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": {
       "@/*": ["src/*"]
     }

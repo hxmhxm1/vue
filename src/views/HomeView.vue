@@ -22,9 +22,9 @@ const data = reactive([
     desc: '等同于react中的context'
   },
   {
-    title: '待定', 
-    url: '/',
-    desc: ''
+    title: 'node.js学习',
+    url: '/node-test',
+    desc: '需要认证'
   }
 ])
 const goDetail = (params: {title: string, url: string, desc: string}) => {
@@ -32,7 +32,7 @@ const goDetail = (params: {title: string, url: string, desc: string}) => {
 }
 // 生成随机颜色 
 const randomColor = () => {
-  function isLightColor(color) {
+  function isLightColor(color: string) {
     // 判断颜色是否为浅色
     const rgb = parseInt(color.substring(1), 16);
     const r = (rgb >> 16) & 0xff;
