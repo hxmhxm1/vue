@@ -100,7 +100,7 @@ onMounted(() => {
   getList()
 })
 const getList = async() => {
-  const res = getListApi()
+  const res = await getListApi()
   if(res.code === ECode.SUCCESS){
     accounts.value = res.data
   }
