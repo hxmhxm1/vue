@@ -101,7 +101,7 @@ const login = (formEl: FormInstance | undefined) => {
           const res = await loginApi(ruleForm)
           if(res.code === ECode.SUCCESS){
             localStorage.setItem(TOKEN, res.data)
-            router.push('/')
+            router.push('/home')
           }
         } catch (error) {
           console.log('登录错误', error);
